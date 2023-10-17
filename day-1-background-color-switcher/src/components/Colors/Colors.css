@@ -1,0 +1,7 @@
+.colors {
+  display: flex;
+  margin: 100px auto;
+  justify-content: space-around;
+  align-items: center;
+  width:50%;
+}
