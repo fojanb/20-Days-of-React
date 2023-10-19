@@ -1,10 +1,6 @@
-import Colors from '../components/Colors/Colors'
+import Colors from "../components/Colors/Colors";
 const App = () => {
-  return (
-    <div>
-      <Colors/>
-    </div>
-  );
-}
+  return <Colors />;
+};
 
 export default App;

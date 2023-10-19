@@ -11,7 +11,8 @@ const Colors = () => {
     { color: "orange", id: 24 },
   ];
   const clickHandler = (e) => {
-    setBgColor[e.target.style.backgroundColor];
+    setBgColor(e.target.style.backgroundColor);
+    document.body.style.backgroundColor = bgColor;
   };
   const renderedColors = colors.map((color, index) => (
     <Color color={color.color} key={index} click={(e) => clickHandler(e)} />
@@ -19,7 +20,6 @@ const Colors = () => {
   return (
     <div>
       <div className="colors">{renderedColors}</div>
-      <div>{bgColor}</div>
     </div>
   );
 };
