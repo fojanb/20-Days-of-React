@@ -1,29 +1,22 @@
+import { useState, useEffect } from "react";
 import Color from "../Color/Color";
-import { useState } from "react";
+import { colors } from "../../colors";
 import "./Colors.css";
 const Colors = () => {
   const [bgColor, setBgColor] = useState("#373f51");
-  const colors = [
-    { color: "#ffffff", id: 20 },
-    { color: "#e0b1cb", id: 21 },
-    { color: "#246a73", id: 22 },
-    { color: "#691e06", id: 23 },
-    { color: "#b69121", id: 24 },
-  ];
-  const setBackgroundColor = () => {
+  useEffect(() => {
     document.body.style.backgroundColor = bgColor;
-  }
-  const clickHandler = (e) => {
-    setBgColor(e.target.style.backgroundColor);
-  };
-  const renderedColors = colors.map((color, index) => (
-    <Color color={color.color} key={index} click={(e) => clickHandler(e)} />
-  ));
-  setBackgroundColor();
-  return (
-    <div>
-      <div className="colors">{renderedColors}</div>
-    </div>
-  );
+  });
+  const renderedColors = colors.map(clr => {
+    const { color, id } = clr;
+    return (
+      <Color
+        color={color}
+        key={id}
+        click={(e) => setBgColor(e.target.style.backgroundColor)}
+      />
+    );
+  });
+  return <div className="colors">{renderedColors}</div>;
 };
 export default Colors;
