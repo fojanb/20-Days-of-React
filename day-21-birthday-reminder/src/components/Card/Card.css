@@ -1,0 +1,20 @@
+.card {
+  display: flex;
+  width: 100%;
+  margin: 15px;
+  background-color: #edafb8;
+  padding: 15px;
+  border: 1px solid rgb(184, 158, 165);
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .person {
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.card .person * {
+  margin: 5px;
+}

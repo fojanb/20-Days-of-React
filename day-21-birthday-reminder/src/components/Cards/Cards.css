@@ -1,0 +1,29 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+  width: 30%;
+  background-color: #f0d5dc;
+  padding: 20px;
+  border: 2px solid #d3bbc2;
+  border-radius: 5px;
+  box-shadow: 10px 10px;
+
+}
+.cards button {
+  border: none;
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  cursor: pointer;
+  width: 50%;
+  padding: 10px;
+  border: 2px solid #d3bbc2;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: large;
+  margin: 15px;
+
+}
