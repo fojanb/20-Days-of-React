@@ -18,13 +18,15 @@ form {
   button {
     background-color: $btn_bg_color;
     padding: $padding;
-    border: none;
-    outline: none;
+    border: $border;
+    outline: $outline;
     color: $btn_txt_color;
     cursor: pointer;
   }
   input {
     padding: $padding;
     width: $input_width;
+    border: $border;
+    outline: $outline;
   }
 }
