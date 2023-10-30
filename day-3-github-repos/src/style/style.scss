@@ -1,0 +1,30 @@
+@import "variables";
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background-color: $bg_color;
+  color: $main_color;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: $form_width;
+  margin: $form_margin;
+  button {
+    background-color: $btn_bg_color;
+    padding: $padding;
+    border: none;
+    outline: none;
+    color: $btn_txt_color;
+    cursor: pointer;
+  }
+  input {
+    padding: $padding;
+    width: $input_width;
+  }
+}
