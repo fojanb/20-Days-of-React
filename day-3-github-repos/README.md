@@ -1,4 +1,3 @@
-# Fetch github repositories based on github username
+# Fetch github repositories based on github username with React.js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
